@@ -70,6 +70,7 @@ if (!skipChecks) {
 // build
 if (!skipBuild) {
   run('bun run clean')
+  run('bun install')
   run('bun run build')
 
   if (!fs.existsSync('./dist')) {
