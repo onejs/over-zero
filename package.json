@@ -43,7 +43,8 @@
     "typecheck": "tsc --noEmit",
     "clean": "tamagui-build clean",
     "clean:build": "tamagui-build clean:build",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "bun run build",
+    "release": "bun ./scripts/release.ts"
   },
   "exports": {
     "./package.json": "./package.json",
