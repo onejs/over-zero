@@ -528,10 +528,10 @@ import * as Queries from './groupedQueries'
             .map((line, i) => (i === 0 ? line : `    ${line}`))
             .join('\n')
 
-          // defineQuery with validator and args - cast args to proper type since zero types it as ReadonlyJSONValue | undefined
+          // defineQuery with validator and args
           return `  ${q.name}: defineQuery(
     ${indentedValidator},
-    ({ args }) => Queries.${file}.${q.name}(args as ${q.params})
+    ({ args }) => Queries.${file}.${q.name}(args)
   ),`
         })
         .join('\n')
