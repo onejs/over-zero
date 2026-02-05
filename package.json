@@ -1,6 +1,6 @@
 {
   "name": "on-zero",
-  "version": "0.0.4",
+  "version": "0.0.71",
   "description": "A typed layer over @rocicorp/zero with queries, mutations, and permissions",
   "sideEffects": false,
   "source": "src/index.ts",
@@ -11,11 +11,6 @@
   "bin": {
     "on-zero": "./cli.cjs"
   },
-  "files": [
-    "src",
-    "types",
-    "dist"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -69,7 +64,8 @@
     }
   },
   "dependencies": {
-    "@take-out/helpers": "^0.0.61",
+    "valibot": "^1.1.0",
+    "@take-out/helpers": "^0.0.71",
     "@sinclair/typebox": "^0.34.41",
     "@sinclair/typebox-codegen": "^0.11.1",
     "chokidar": "^4.0.3",
@@ -90,7 +86,7 @@
     }
   },
   "devDependencies": {
-    "@tamagui/build": "^2.0.0-rc.0",
+    "@tamagui/build": "2.0.0-rc.2",
     "@types/node": "25.2.0",
     "@types/pg": "^8.11.10",
     "@types/react": "^19.0.0",
@@ -98,7 +94,11 @@
     "oxlint": "^1.31.0",
     "react": "^19.0.0",
     "react-native": "*",
-    "typescript": "^5.9.3",
-    "valibot": "^1.1.0"
-  }
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "src",
+    "types",
+    "dist"
+  ]
 }
