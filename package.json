@@ -1,6 +1,6 @@
 {
   "name": "on-zero",
-  "version": "0.0.73",
+  "version": "0.0.74",
   "description": "A typed layer over @rocicorp/zero with queries, mutations, and permissions",
   "sideEffects": false,
   "source": "src/index.ts",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "valibot": "^1.1.0",
-    "@take-out/helpers": "^0.0.73",
+    "@take-out/helpers": "^0.0.74",
     "@sinclair/typebox": "^0.34.41",
     "@sinclair/typebox-codegen": "^0.11.1",
     "chokidar": "^4.0.3",
